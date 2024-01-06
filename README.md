@@ -1,10 +1,17 @@
 # API Documentation
 
+Before running the application, make sure to create a .env file in the root directory with the following content:
+
+env
+PORT=8000
+MONGOURL=mongodb+srv://theunknown:b1obdiN8ad5x25xW@cluster0.eu36w9k.mongodb.net/crudApplication?retryWrites=true&w=majority
+
+
 ## Create Employee
 
-Endpoint: localhost:8000/api/createEmployee
+### Endpoint: localhost:8000/api/createEmployee
 
-### Request
+#### Request
 
 json
 {
@@ -18,7 +25,7 @@ json
 }
 
 
-### Response
+#### Response
 
 The response will include details about the created employee.
 
@@ -26,13 +33,13 @@ The response will include details about the created employee.
 
 ## Get All Employees
 
-Endpoint: localhost:8000/api/getAllEmployee
+### Endpoint: localhost:8000/api/getAllEmployee
 
-### Request
+#### Request
 
 This endpoint does not require any specific request parameters.
 
-### Response
+#### Response
 
 The response will contain a list of all employees with their respective details.
 
@@ -40,9 +47,9 @@ The response will contain a list of all employees with their respective details.
 
 ## Update Employee
 
-Endpoint: localhost:8000/api/updateEmployee/{_id}
+### Endpoint: localhost:8000/api/updateEmployee/{_id}
 
-### Request
+#### Request
 
 json
 {
@@ -56,7 +63,7 @@ json
 }
 
 
-### Response
+#### Response
 
 The response will include details about the updated employee.
 
@@ -64,13 +71,13 @@ The response will include details about the updated employee.
 
 ## Delete Employee
 
-Endpoint: localhost:8000/api/deleteEmployee/{_id}
+### Endpoint: localhost:8000/api/deleteEmployee/{_id}
 
-### Request
+#### Request
 
 This endpoint does not require any specific request parameters.
 
-### Response
+#### Response
 
 The response will confirm the successful deletion of the specified employee.
 
